@@ -1,0 +1,385 @@
+@import 'reset', 'font', 'variable';
+body{overflow-x: hidden;}
+*{cursor: none !important;}
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: $main-color;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+  z-index: 9999;
+
+  &.active {
+    background-color: $yellow;
+  }
+}
+main {
+  position: relative; z-index: 20;
+  background-color: $white;
+  height: 100vh;
+  width: 100%;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100%;
+    padding: 35px 42px;
+    display: flex;
+    justify-content: space-between;
+
+    .img-wrap {
+      position: relative;
+
+      &:hover a.full img {
+        max-width: 90px;
+        transform: translateX(-20px);
+      }
+
+      a {
+        display: block;
+
+        img.main-logo {
+          width: 42px;
+          height: 42px;
+          object-fit: cover;
+        }
+      }
+
+      a.full {
+        position: absolute;
+        top: 0;
+        left: 50px;
+
+        img {
+          height: 42px;
+          max-width: 0;
+          object-fit: cover;
+          transition: max-width 0.15s ease;
+        }
+      }
+    }
+
+    .hambuger {
+      position: relative;
+
+      .ham-wrap {
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: $main-color;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 18px;
+          height: 18px;
+          object-fit: cover;
+        }
+      }
+
+      .down {
+        transition: .4s;
+        opacity: 0;
+
+        a {
+          padding: 10px 15px;
+          border: 2px solid $purple;
+          width: 175px;
+          border-radius: 30px;
+          background-color: $white;
+          color: $purple;
+          position: absolute;
+          right: 100%;
+          top: 0;
+          margin-right: 20px;
+        }
+      }
+
+      .ham-menu {
+        position: absolute;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+
+        li {
+          margin: 15px 0;
+          text-align: right;
+
+          a {
+            width: initial;
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: right;
+            border-radius: 40px;
+            background-color: $yellow;
+            color: $purple;
+            font-family: $primary-eng;
+            font-size: 28px;
+            font-weight: 800;
+          }
+        }
+
+        &.open {
+          max-height: 400px;
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+  .submain-title-wrap{
+    display: flex; width: 100%; justify-content: center; align-items: center;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 50px;
+    h1.subtitle{
+      font-size: 75px;
+      font-family: $primary-eng;
+      font-weight: 800; color: $main-color;
+    }
+    .text-wrapper{
+      display: inline-block;
+      overflow: hidden;
+      transition: width 0.5s ease;
+      .animated-text{
+        font-family: $primary-eng;
+        height: 150px;
+        line-height: 150px;
+        font-weight: 800;
+        font-size: 75px;
+        text-align: center;
+        color: $main-color;
+        background-color: $yellow;
+        transition: background-color 0.5s ease;
+        white-space: nowrap;
+        border-radius: 90px;
+      }
+    }
+    .text-measure{
+      position: absolute;
+      visibility: hidden;
+      white-space: nowrap;
+      font-size: 75px;
+      padding: 10px 20px;
+    }
+  }
+  .scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $main-color;
+    color: $white;
+    font-size: 15px;
+    width: 130px;
+    border-radius: 30px;
+    padding: 10px 15px;
+  }
+}
+section.text-content{
+  background-color: $white;
+  text-align: center; height: 100vh; width: 100%; margin: auto;
+  display: flex; flex-direction: column; gap: 50px;
+  padding-top: 50px; position: relative; z-index: 15;
+  background-color: $white;
+  p{
+    font-weight: 700;
+    padding: 0 20px;
+    color: $main-color;
+    font-size: 36px;
+  }
+}
+section.slide-page{
+  position: relative; z-index: 10;
+  height: 100vh;
+  .page{
+    background-color: white;
+    padding: 100px 50px;
+    position: absolute;
+    height: 100vh; width: 100%;
+    .card-content{
+      height: 100%;
+      justify-content: space-between;
+      .card-title{
+        display: flex; flex-direction: column;
+        justify-content: flex-start; align-items: flex-start;
+        gap: 50px;
+        color: $main-color; font-weight: 800;
+        font-family: $primary-eng;
+        h2{
+          font-size: 80px;
+          font-weight: 800; 
+        }
+        ul{
+          li{font-size: 45px; padding: 10px 0;}
+        }
+      }
+      .card-desc{
+        color: $main-color;
+        font-size: 15px;
+        position: absolute; bottom: 20px;
+        p{}
+      }
+    }
+    .card-img{
+      position: absolute;
+      right: 150px; bottom: 100px;
+      width: 200px;
+      img{width: 200px;}
+    }
+  }
+  .page1{background-color: $yellow;}
+  .page2{
+    background-color: $skyblue;
+    .card-img{right: 250px;}
+  }
+  .page3{
+    background-color: $main-color;
+    .card-content{
+      .card-title{color: $white;}
+      .card-desc{color: $white;}
+    }
+    .card-img{right: 300px;}
+  }
+  .page4{
+    .card-img{right: 400px;}
+  }
+}
+section.award{
+  background-color: $white;
+  position: relative; z-index: 10;
+  padding: 195px 48px 240px;
+  h1{font-size: 72px; font-family: $primary-eng; color: $main-color; font-weight: 900;}
+  .award-list{
+    li{
+      border-bottom: 1.5px solid $main-color; height: 93px;
+      display: flex; align-items: center; gap: 100px;
+      justify-content: flex-start;
+      padding: 4rem 3rem; color: $main-color;
+      font-family: $primary-eng;
+      .year{
+        font-size: 30px;
+        font-weight: 800;
+        flex: 1;
+      }
+      .title{
+        font-size: 30px;
+        font-weight: 700;
+        flex: 1;
+      }
+      .award-info{
+        display: flex; gap: 20px;
+        flex: 1; align-items: center;
+        img{
+          width: 60px;
+        }
+        .desc-wrap{
+          font-size: 30px;
+          b{}
+          p{font-size: 20px;}
+        }
+      }
+    }
+  }
+}
+section.logo-slide{
+  background-color: $white;
+  position: relative;  z-index: 10;
+  h3{
+    color: $main-color;
+    margin-bottom: 90px;
+    padding: 0 48px;
+    font-size: 1.5rem; font-weight: 700;
+  }
+  .logo-wrap{
+    .animation{
+      display: flex; gap: 100px;
+      align-items: center;
+      animation: scroll 30s linear infinite;
+      .slide{
+        img{}
+      }
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
+section.map{
+  padding: 240px 72px 124px;
+  position: relative; z-index: 10;
+  background-color: $white;
+  .content-wrap{
+    color: $main-color; font-family: $primary-eng;
+    h2{
+      font-size: 5rem; font-weight: 800;
+    }
+    p{
+      font-size: 1.3rem; margin: 17px 0 23px;
+      font-weight: 500;
+    }
+  }
+}
+.space{
+  height: 60vh;
+}
+footer {
+  overflow: hidden;
+  position: fixed;
+  height: 60vh;
+  z-index: 1;
+  background-color: $main-color;
+  text-align: center;
+  bottom: 0; width: 100%;
+  .footer-content {
+    .footer-title {
+      color: $white;
+      font-size: $title;
+      font-family: $primary-eng;
+      font-weight: 900;
+      margin-bottom: 60px;
+      padding-top: 50px;
+    }
+    .bottom-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      a {
+        font-family: $primary-eng;
+        color: $white; 
+        border: 1px solid $white;
+        width: 180px;
+        padding: 10px 5px;
+        border-radius: 40px;
+        font-size: 21px; font-weight: 800;
+        margin-bottom: 40px;
+        transition: .2s; 
+        &:hover {
+          background-color: $yellow;
+          color: $purple;
+        }
+      }
+    }
+    .footer-text {
+      color: $white;
+    }
+    .bottom-logo {
+      transform: translateY(150px);
+    }
+  }
+}

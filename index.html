@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PITAP</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- gasp -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <link rel="icon" href="images/blueLogo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsible.css">
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+  <div class="screen">
+    <div class="ani-wrap">
+      <img src="images/screenimg.png" alt="screen">
+    </div>
+  </div>
+  <!-- main -->
+  <div class="main-page">
+    <main>
+      <header>
+        <div class="img-wrap">
+          <a href="index.html">
+            <img class="main-logo" src="images/blueLogo.png" alt="logo">
+          </a>
+          <a class="full" href="#none">
+            <img src="images/fullLogo-cut.png" alt="logo">
+          </a>
+        </div>
+        <div class="hambuger">
+          <div class="ham-wrap">
+            <img src="images/hambuger.png" alt="ham">
+          </div>
+          <div class="down">
+            <a href="#none">회사소개서 다운로드</a>
+          </div>
+          <ul class="ham-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#none">PROJECT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="#none">CONTACT</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="text-content">
+        <div class="swiper-title"></div>
+        <a href="#none">VIEW PROJECT</a>
+      </div>
+      <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video1.mp4" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video2.mp4" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video3.webm" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video4.webm" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video5.webm" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <img width="100%" src="images/img1.png" alt="slide">
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video7.webm" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video8.webm" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <img width="100%" src="images/img2.png" alt="img">
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video10.webm" autoplay muted></video>
+              <div class="layer"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay">
+              <video width="100%" src="images/video11.webm" autoplay muted></video>
+              .layer
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <div class="progress"></div>
+        </div>
+        <div class="main-btn-wrap">
+          <div class="swiper-button-next main-next">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev main-prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+        </div>
+      </div>
+      <div class="pause">
+        <i class="fa-solid fa-pause"></i>
+      </div>
+    </main>
+    <!-- welcome -->
+    <section class="welcome">
+      <h1 class="welcome-title">WELCOME</h1>
+      <div class="swiper welcome-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#none" class="img-wrap">
+              <div class="slideimg-wrap">
+                <img src="images/welcome-slide01.png" alt="we01">
+                <img src="images/welcome-slide02.png" alt="we01">
+                <img src="images/welcome-slide03.png" alt="we01">
+              </div>
+              <div class="welcome-layer"></div>
+              <h2 class="hover-title">PROJECT</h2>
+              <p class="hover-txt">피터패트의 새로운 프로젝트는 늘 설레이게 합니다. 새로운 시선에서, 새로운 생각으로, 더 새롭게!</p>
+              <div class="text-content">
+                <p>PROJECT</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="img-wrap">
+              <img class="line" src="images/slide-img01.jpg" alt="slide1">
+            </a>
+            <div class="welcome-layer"></div>
+              <h2 class="hover-title">STORY</h2>
+              <p class="hover-txt">젊고 활기찬 합정만의 감성을 즐기기 <br> 위한 피트인들의 생활이 궁금하신가요? 어서오세요, 잘 오셨습니다!</p>
+              <div class="text-content">
+                <p>STORY</p>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="img-wrap">
+              <video src="images/slide-img02.mp4"></video>
+              <div class="welcome-layer"></div>
+              <h2 class="hover-title">ABOUT <br> PITAPAT</h2>
+              <p class="hover-txt">피터패트에서는 다양한 배경을 가진 멋진 사람들이 모여있어요! <br> 모두가 서로의 방식을 존중하고, 하나의 팀으로 함꼐 나아갑니다.</p>
+              <div class="text-content">
+                <p>ABOUT PITAPAT</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="img-wrap">
+              <img class="img-color" src="images/slide-img03.png" alt="slide1">
+              <div class="animation-wrap">
+                <img class="animation ani01" src="images/animation01.png" alt="ani01">
+                <img class="animation ani02" src="images/animation02.png" alt="ani02">
+              </div>
+            </a>
+            <div class="welcome-layer"></div>
+            <h2 class="hover-title">RECRRUIT</h2>
+            <p class="hover-txt">피터패트가 궁금하신가요? <br> 피트인이 되고 싶으신가요? <br> 언제든지요! 환영합니다</p>
+            <div class="text-content">
+              <p>RECRRUIT</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="img-wrap">
+              <img src="images/slide-img04.jpg" alt="slide1">
+            </a>
+              <div class="welcome-layer"></div>
+              <h2 class="hover-title">BROCHURE</h2>
+              <p class="hover-txt">피터패트만의 유쾌한 감각이 묻어있는 <br> 새로운 브랜드가 탄생했습니다! <br> 고객에게 무한한 디지털 경험을 <br> 제공하기 위해!</p>
+              <div class="text-content">
+                <p>BROCHURE</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- text-part -->
+    <section class="text-part">
+      <p>새로운 도전을 마주했을 때 두근거림은 <br>
+        PITAPAT만의 디지털 크리에이티브한 흐름을 이끌며, <br>
+        무한하고 폭넓은 가능성에 도전합니다.</p>
+    </section>
+    <!-- move-word -->
+    <section class="move-word">
+      <div class="word-wrap">
+        <img src="images/word01.png" alt="word1">
+      </div>
+      <div class="word-wrap">
+        <img src="images/word02.png" alt="word2">
+      </div>
+      <div class="word-wrap">
+        <img src="images/word03.png" alt="word3">
+      </div>
+    </section>
+    <!-- card -->
+    <section class="card-section">
+      <div class="inner">
+        <div class="title-wrap">
+          <h1 class="card-title">/WHAT WE DO</h1>
+          <a href="#none" class="about">ABOUT</a>
+        </div>
+        <div class="card-wrap">
+          <div class="card">
+            <h2>PLANNING</h2>
+            <img src="images/icon01.png" alt="icon1">
+            <div class="hover-content">
+              <p>우리의 계획 수립을 통해 고객에게
+                성공적인 디지털 경험을 위한 차별화된
+                PITAPAT만의 전략을 제공합니다.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>BRANDING</h2>
+            <img src="images/icon02.png" alt="icon2">
+            <div class="hover-content">
+              <p>본질과 방향성에 집중한 브랜딩,
+                PITAPAT는 기업의 방향성에 맞게
+                기대를 뛰어넘는 가치를 창출합니다.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>UI/UX DESIGN</h2>
+            <img src="images/icon03.png" alt="icon3">
+            <div class="hover-content">
+              <p>목표를 늘 더 높게 도달하게 만듭니다.
+                목표를 단순히 그리는 것이 아니라
+                깊이 몰입하여 설계하고 디자인합니다.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>MARTING</h2>
+            <img src="images/icon04 1.png" alt="icon4">
+            <div class="hover-content">
+              <p>처음의 타겟을 완벽하게 이해하고 설정할 때,
+                우리는 그에 대한 효과를 알고 있습니다.
+                가장 최고의 때의 최적의 타켓팅을 시작합니다.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>PUBLISH</h2>
+            <img src="images/icon05.png" alt="icon5">
+            <div class="hover-content">
+              <p>보이는 화면 속에 얼마나 많은 고민이 들어가 있는지 알고 있습니다. 설계부터 구현까지, 사용자의 디지털 경험을 더욱 풍부하게합니다.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>DEVELOP</h2>
+            <img src="images/icon06.png" alt="icon6">
+            <div class="hover-content">
+              <p>멈춰있지 않고 끊임없이 생각합니다.
+                주춧돌을 쌓아내는 과정부터 사용자가 활용할
+                미래까지 우리는 함께 성장합니다.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#none" class="about-bottom">ABOUT</a>
+      </div>
+    </section>
+    <div class="space"></div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-img">
+          <img class="float-img01" src="images/footer-img01.png" alt="footerImg01">
+          <img class="float-img02" src="images/footer-img02.png" alt="footerImg02">
+          <img class="float-img03" src="images/footer-img03.png" alt="footerImg03">
+        </div>
+        <h1 class="footer-title">/LET'S CONNECT US.</h1>
+        <div class="bottom-wrap">
+          <a href="#none" class="linkbtn1">CONTACT US</a>
+          <a href="#none" class="linkbtn2">BROCHURE</a>
+        </div>
+        <p class="footer-text">COPYRIGHT PITAPAT. ALL RIGHTS RESERVED. <br>
+          CONTACT INFO. +82 334 1438, help@pitap.at, 서울 마포구 잔다리로 39</p>
+        <div class="bottom-logo">
+          <img src="https://www.pitap.at/assets/images/kv/ImageAssets_FooterVisual.svg" alt="bottonlogo">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script/cuetom.js"></script>
+</body>
+
+</html>

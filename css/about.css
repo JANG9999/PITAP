@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* eng */
+/* kr */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* font */
+/* color */
+/* font-size */
+body {
+  overflow-x: hidden;
+}
+
+* {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #0134FF;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-transform 0.05s ease;
+  transition: -webkit-transform 0.05s ease;
+  transition: transform 0.05s ease;
+  transition: transform 0.05s ease, -webkit-transform 0.05s ease;
+  z-index: 9999;
+}
+.custom-cursor.active {
+  background-color: #F4E357;
+}
+
+main {
+  position: relative;
+  z-index: 20;
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+}
+main header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  padding: 35px 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main header .img-wrap {
+  position: relative;
+}
+main header .img-wrap:hover a.full img {
+  max-width: 90px;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+main header .img-wrap a {
+  display: block;
+}
+main header .img-wrap a img.main-logo {
+  width: 42px;
+  height: 42px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main header .img-wrap a.full {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+main header .img-wrap a.full img {
+  height: 42px;
+  max-width: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: max-width 0.15s ease;
+  transition: max-width 0.15s ease;
+}
+main header .hambuger {
+  position: relative;
+}
+main header .hambuger .ham-wrap {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #0134FF;
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main header .hambuger .ham-wrap img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main header .hambuger .down {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+main header .hambuger .down a {
+  padding: 10px 15px;
+  border: 2px solid #3E35F4;
+  width: 175px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #3E35F4;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  margin-right: 20px;
+}
+main header .hambuger .ham-menu {
+  position: absolute;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1s ease;
+  transition: max-height 1s ease;
+}
+main header .hambuger .ham-menu li {
+  margin: 15px 0;
+  text-align: right;
+}
+main header .hambuger .ham-menu li a {
+  width: initial;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: right;
+  border-radius: 40px;
+  background-color: #F4E357;
+  color: #3E35F4;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+}
+main header .hambuger .ham-menu.open {
+  max-height: 400px;
+  pointer-events: auto;
+}
+main .submain-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  gap: 50px;
+}
+main .submain-title-wrap h1.subtitle {
+  font-size: 75px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 800;
+  color: #0134FF;
+}
+main .submain-title-wrap .text-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+main .submain-title-wrap .text-wrapper .animated-text {
+  font-family: "Red Hat Display", sans-serif;
+  height: 150px;
+  line-height: 150px;
+  font-weight: 800;
+  font-size: 75px;
+  text-align: center;
+  color: #0134FF;
+  background-color: #F4E357;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  white-space: nowrap;
+  border-radius: 90px;
+}
+main .submain-title-wrap .text-measure {
+  position: absolute;
+  visibility: hidden;
+  white-space: nowrap;
+  font-size: 75px;
+  padding: 10px 20px;
+}
+main .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #0134FF;
+  color: #fff;
+  font-size: 15px;
+  width: 130px;
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+section.text-content {
+  background-color: #fff;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 15;
+  background-color: #fff;
+}
+section.text-content p {
+  font-weight: 700;
+  padding: 0 20px;
+  color: #0134FF;
+  font-size: 36px;
+}
+
+section.slide-page {
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+}
+section.slide-page .page {
+  background-color: white;
+  padding: 100px 50px;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+section.slide-page .page .card-content {
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.slide-page .page .card-content .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 50px;
+  color: #0134FF;
+  font-weight: 800;
+  font-family: "Red Hat Display", sans-serif;
+}
+section.slide-page .page .card-content .card-title h2 {
+  font-size: 80px;
+  font-weight: 800;
+}
+section.slide-page .page .card-content .card-title ul li {
+  font-size: 45px;
+  padding: 10px 0;
+}
+section.slide-page .page .card-content .card-desc {
+  color: #0134FF;
+  font-size: 15px;
+  position: absolute;
+  bottom: 20px;
+}
+section.slide-page .page .card-img {
+  position: absolute;
+  right: 150px;
+  bottom: 100px;
+  width: 200px;
+}
+section.slide-page .page .card-img img {
+  width: 200px;
+}
+section.slide-page .page1 {
+  background-color: #F4E357;
+}
+section.slide-page .page2 {
+  background-color: #7ED6FF;
+}
+section.slide-page .page2 .card-img {
+  right: 250px;
+}
+section.slide-page .page3 {
+  background-color: #0134FF;
+}
+section.slide-page .page3 .card-content .card-title {
+  color: #fff;
+}
+section.slide-page .page3 .card-content .card-desc {
+  color: #fff;
+}
+section.slide-page .page3 .card-img {
+  right: 300px;
+}
+section.slide-page .page4 .card-img {
+  right: 400px;
+}
+
+section.award {
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  padding: 195px 48px 240px;
+}
+section.award h1 {
+  font-size: 72px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #0134FF;
+  font-weight: 900;
+}
+section.award .award-list li {
+  border-bottom: 1.5px solid #0134FF;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 4rem 3rem;
+  color: #0134FF;
+  font-family: "Red Hat Display", sans-serif;
+}
+section.award .award-list li .year {
+  font-size: 30px;
+  font-weight: 800;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+section.award .award-list li .title {
+  font-size: 30px;
+  font-weight: 700;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+section.award .award-list li .award-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.award .award-list li .award-info img {
+  width: 60px;
+}
+section.award .award-list li .award-info .desc-wrap {
+  font-size: 30px;
+}
+section.award .award-list li .award-info .desc-wrap p {
+  font-size: 20px;
+}
+
+section.logo-slide {
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+section.logo-slide h3 {
+  color: #0134FF;
+  margin-bottom: 90px;
+  padding: 0 48px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section.logo-slide .logo-wrap .animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+section.map {
+  padding: 240px 72px 124px;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+section.map .content-wrap {
+  color: #0134FF;
+  font-family: "Red Hat Display", sans-serif;
+}
+section.map .content-wrap h2 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+section.map .content-wrap p {
+  font-size: 1.3rem;
+  margin: 17px 0 23px;
+  font-weight: 500;
+}
+
+.space {
+  height: 60vh;
+}
+
+footer {
+  overflow: hidden;
+  position: fixed;
+  height: 60vh;
+  z-index: 1;
+  background-color: #0134FF;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+footer .footer-content .footer-title {
+  color: #fff;
+  font-size: 75px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+footer .footer-content .bottom-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+footer .footer-content .bottom-wrap a {
+  font-family: "Red Hat Display", sans-serif;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 180px;
+  padding: 10px 5px;
+  border-radius: 40px;
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .footer-content .bottom-wrap a:hover {
+  background-color: #F4E357;
+  color: #3E35F4;
+}
+footer .footer-content .footer-text {
+  color: #fff;
+}
+footer .footer-content .bottom-logo {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+}

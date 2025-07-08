@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIATP STORY</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- gasp -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <link rel="icon" href="images/blueLogo.png">
+  <link rel="stylesheet" href="css/story.css">
+  <link rel="stylesheet" href="css/story-responsible.css">
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+  <header>
+    <div class="img-wrap">
+      <a href="index.html">
+        <img class="main-logo" src="images/blueLogo.png" alt="logo">
+      </a>
+      <a class="full" href="#none">
+        <img src="images/fullLogo-cut.png" alt="logo">
+      </a>
+    </div>
+    <div class="hambuger">
+      <div class="ham-wrap">
+        <img src="images/hambuger.png" alt="ham">
+      </div>
+      <div class="down">
+        <a href="#none">회사소개서 다운로드</a>
+      </div>
+      <ul class="ham-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#none">PROJECT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#none">STORY</a></li>
+        <li><a href="#none">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="title-wrap">
+      <div class="story-title">
+        <h1>STORY</h1>
+      </div>
+      <div class="select">
+        <h2>ALL</h2>
+        <div class="option">
+          <p data-category="ALL">ALL</p>
+          <p data-category="NEWS">NEWS</p>
+          <p data-category="LIFE">LIFE</p>
+          <p data-category="CAREER">CAREER</p>
+          <p data-category="AWARDS">AWARDS</p>
+          <p data-category="MAGAZINE">MAGAZINE</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrap">
+      <div class="card" data-category="NEWS ALL">
+        <img src="images/story1.jpg" alt="story1">
+        <p>NEWS</p>
+        <h2>피터패트 리뉴얼</h2>
+      </div>
+      <div class="card" data-category="NEWS ALL">
+        <img src="images/story2.jpg" alt="story2">
+        <p>NEWS</p>
+        <h2>피터패트 창립 20주년</h2>
+      </div>
+      <div class="card" data-category="NEWS ALL">
+        <img src="images/story3.jpg" alt="story3">
+        <p>NEWS</p>
+        <h2>ICT AWARD KOREA 2023부문 수상</h2>
+      </div>
+      <div class="card" data-category="LIFE ALL">
+        <img src="images/story4.jpg" alt="story4">
+        <p>LIFE</p>
+        <h2>피터패트 2023 워크샵(상반기)</h2>
+      </div>
+      <div class="card" data-category="NEWS ALL">
+        <img src="images/story5.jpg" alt="story5">
+        <p>NEWS</p>
+        <h2>2022.A.N.D.AWARD부문 수상</h2>
+      </div>
+      <div class="card" data-category="NEWS ALL">
+        <img src="images/story6.jpg" alt="story6">
+        <p>NEWS</p>
+        <h2>WEB AWARD KOREA 2022부문 수상</h2>
+      </div>
+      <div class="card" data-category="NEWS ALL">
+        <img src="images/story7.jpg" alt="story7">
+        <p>NEWS</p>
+        <h2>ICT AWARD KOREA 2022부문 수상</h2>
+      </div>
+      <div class="card" data-category="NEWS ALL">
+        <img src="images/story8.jpg" alt="story8">
+        <p>NEWS</p>
+        <h2>피터패트 채용 공고 (상시 채용)</h2>
+      </div>
+      <div class="card" data-category="MAGAZINE ALL">
+        <img src="images/story9.jpg" alt="story9">
+        <p>NEWS</p>
+        <h2>DIGITAL INSIGHT 2024년 10월호</h2>
+      </div>
+    </div>
+    <div class="no-result">
+      <i>!</i> <br>검색결과가 없습니다
+    </div>
+  </main>
+  <div class="space"></div>
+  <footer>
+      <div class="footer-content">
+        <h1 class="footer-title">/LET'S CONNECT US.</h1>
+        <div class="bottom-wrap">
+          <a href="#none" class="linkbtn1">CONTACT US</a>
+          <a href="#none" class="linkbtn2">BROCHURE</a>
+        </div>
+        <p class="footer-text">COPYRIGHT PITAPAT. ALL RIGHTS RESERVED. <br>
+          CONTACT INFO. +82 334 1438, help@pitap.at, 서울 마포구 잔다리로 39</p>
+      </div>
+  </footer>
+  <script src="script/story.js"></script>
+</body>
+
+</html>
