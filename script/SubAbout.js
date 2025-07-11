@@ -29,50 +29,7 @@ function updateMessage() {
   const { text, bgColor } = messages[index];
 
   // 텍스트 너비 측정
-  const extraPadding = window.innerWidth <= 768 ? 100 : 10;
-  measure.textContent = text + extraPadding;
-
-  const newWidth = measure.offsetWidth;
-
-  // 텍스트 바꾸기 (즉시)
-  p.textContent = text;
-
-  // 배경색 & 너비 애니메이션
-  p.style.backgroundColor = bgColor;
-  wrapper.style.width = newWidth + "px";
-
-  index = (index + 1) % messages.length;
-}
-
-// 초기 너비 설정
-measure.textContent = messages[0].text;
-wrapper.style.width = measure.offsetWidth + "px";
-
-updateMessage(); // 첫 글자 설정
-setInterval(updateMessage, 2000);
-
-/* text-content */
-const isMobile = window.innerWidth <= 768;
-
-gsap.fromTo(".text-content p",
-  { y: isMobile ? 250 : 550 },
-  {
-    y: isMobile ? -1300 : -1000,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".card-section",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: 0.5
-    }
-  }
-);
-  
-
-/* page */
-gsap.registerPlugin(ScrollTrigger);
-
-// 화면 너비가 768px 이상일 때만 실행
+  const extraPaddin때
 if (window.innerWidth >= 768) {
   let panels = gsap.utils.toArray(".slide-page .page");
 
