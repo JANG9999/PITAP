@@ -36,7 +36,7 @@ pitap 홈페이지는 애니메이션이 적절하게 조화를 이루어 시각
 
 <br><br>
 
-![Image](https://github.com/user-attachments/assets/f6f018e1-817f-437e-934a-8a6b59fe506e)
+![Image](https://github.com/user-attachments/assets/d2da1cad-9e5e-4efc-92f0-32c1aaf64f70)
 <br><br><br>
 
 <br><br>
