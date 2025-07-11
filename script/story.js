@@ -18,7 +18,7 @@ let optionItems = document.querySelectorAll('.option p');
 let cards = document.querySelectorAll('.card');
 let noResult = document.querySelector('.no-result');
 select.addEventListener('click', (e) => {
-  e.stopPropagation(); // 문서 클릭 이벤트 전파 막기
+  e.stopPropagation(); 
   option.classList.toggle('show');
 });
 document.addEventListener('click', () => {
