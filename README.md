@@ -53,12 +53,14 @@ pitap 홈페이지는 애니메이션이 적절하게 조화를 이루어 시각
 ### about
 ![Image](https://github.com/user-attachments/assets/b1600f0a-a809-417e-9561-f5cc6f071cad)
 <br><br><br>
-
+자바스크립트를 활용해 2초 간격으로 글자와 글자의 배경색이 순차적으로 바뀌도록 제작하였습니다. 
+또한 GSAP를 사용해 스크롤 시 하단에 있는 글자가 위로 올라오도록 애니메이션을 적용하였습니다.
 <br><br>
 
 ![Image](https://github.com/user-attachments/assets/4c212696-bda5-4dae-bb96-287c147bdc2b)
 <br><br><br>
-
+GSAP를 활용해 특정 섹션에서 화면을 고정하고, 스크롤 시 화면이 오른쪽에서 왼쪽으로 이동하는 애니메이션을 구현하였습니다. 
+또한 API를 활용하여 지도를 불러와 화면에 표시하였습니다.
 <br><br>
 ### story
 ![Image](https://github.com/user-attachments/assets/361ff072-cc1a-437f-a878-079b9db8bf76)
