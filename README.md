@@ -20,31 +20,26 @@
 ## 메인 페이지 
 
 ### main
-<img width="2845" height="1523" alt="Image" src="https://github.com/user-attachments/assets/e16ce17b-4e41-4c79-b24a-fff036ed508d" />
+![Image](https://github.com/user-attachments/assets/bc7de6bc-95d1-42cc-9b86-dbb0b0b750ae)
 <br><br><br>
 
 <br><br>
 
-<img width="2841" height="1527" alt="Image" src="https://github.com/user-attachments/assets/b35ccd97-e0f3-4ee1-9fda-189640e376f4" />
+![Image](https://github.com/user-attachments/assets/6680fd7e-d3ef-441f-b5f6-6c572bcac076)
 <br><br><br>
 
 <br><br>
 
-<img width="2846" height="1521" alt="Image" src="https://github.com/user-attachments/assets/4556b76f-1146-47f7-a81d-052fa715c191" />
+![Image](https://github.com/user-attachments/assets/a3b3635c-ff07-40c8-876f-18f4c00e49f9)
 <br><br><br>
 
 <br><br>
 
-<img width="2842" height="1516" alt="Image" src="https://github.com/user-attachments/assets/63602e87-0d9b-44ff-9ae0-a13d61d49b70" />
+![Image](https://github.com/user-attachments/assets/f6f018e1-817f-437e-934a-8a6b59fe506e)
 <br><br><br>
 
 <br><br>
 
-<img width="2849" height="1525" alt="Image" src="https://github.com/user-attachments/assets/a0173158-1cac-44f5-8d6e-f53259b7c967" />
-<br><br><br>
-
-
- <br><br>
  
  ## 서브 페이지 
 
