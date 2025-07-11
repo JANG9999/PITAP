@@ -14,7 +14,8 @@
 <br><br>
 
 ## PITAP 홈페이지를 클론코딩한 이유
-
+pitap 홈페이지는 애니메이션이 적절하게 조화를 이루어 시각적으로 편안하면서도 흥미를 유도하는 점이 인상 깊은 사이트라고 생각합니다. 
+이번 클론코딩을 통해 웹사이트의 흐름에 맞춰 자연스럽게 애니메이션을 적용하는 방법을 배우고, 사용자 경험을 고려한 인터랙션 구현에 대해 더 깊이 이해하고자 합니다.
 <br><br>
 
 ## 메인 페이지 
@@ -75,5 +76,5 @@
  <br><br>
 ## 🔗 링크
 
-- [기존 사이트](https://whatishoarding.com/#open)
-- [클론코딩](https://jang9999.github.io/Hoarding-disorder/)
+- [기존 사이트](https://www.pitap.at/)
+- [클론코딩](https://jang9999.github.io/PITAP/#none)
