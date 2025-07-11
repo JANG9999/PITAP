@@ -160,7 +160,6 @@ gsap.to(footer, {
 });
 
 if(window.innerWidth >= 768){
-  // 카드 섹션과 footer-content 동기화 이동
   gsap.fromTo(".footer-content",
     { y: 1000 },
     {
