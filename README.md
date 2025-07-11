@@ -21,24 +21,30 @@ pitap 홈페이지는 애니메이션이 적절하게 조화를 이루어 시각
 ## 메인 페이지 
 
 ### main
+
+마우스를 커스텀하여 기본 커서 대신 도형으로 디자인으로 변경하였고, 특정 영역에 마우스를 올렸을 때 커서 색이 바뀌도록 제작하였습니다.
+<br><br>
 ![Image](https://github.com/user-attachments/assets/bc7de6bc-95d1-42cc-9b86-dbb0b0b750ae)
 <br><br><br>
-
+메뉴 아이콘을 클릭하면 위에서 아래로 메뉴가 내려옵니다.
 <br><br>
 
 ![Image](https://github.com/user-attachments/assets/6680fd7e-d3ef-441f-b5f6-6c572bcac076)
 <br><br><br>
-
+일시정지 버튼을 누르면 스와이퍼 슬라이드가 멈추며, 하단에 위치한 프로그레스바를 통해 현재 슬라이드의 진행 상황을 확인할 수 있습니다.
 <br><br>
 
 ![Image](https://github.com/user-attachments/assets/a3b3635c-ff07-40c8-876f-18f4c00e49f9)
 <br><br><br>
+왼쪽 이미지는 서로 포개어 놓은 뒤, 자바스크립트를 활용해 0.8초 간격으로 순차적으로 투명도를 조절하여 이미지가 바뀌도록 구현했습니다. 
+또한 슬라이드 이미지에 마우스를 올리면 해당 이미지의 제목과 내용이 나타나도록 제작하였습니다.
 
 <br><br>
 
 ![Image](https://github.com/user-attachments/assets/d2da1cad-9e5e-4efc-92f0-32c1aaf64f70)
 <br><br><br>
-
+스크롤을 내리면 글자와 이미지가 좌우로 움직이는 애니메이션을 GSAP를 활용해 구현하였습니다. 
+표 형태의 이미지에 마우스를 올리면 제목과 내용이 나타나도록 제작하였으며, 스크롤이 계속되면 표가 있는 섹션이 위로 올라가면서 그 아래에 숨겨져 있던 푸터 영역이 자연스럽게 드러나도록 구성했습니다.
 <br><br>
 
  
