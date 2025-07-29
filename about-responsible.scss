@@ -1,0 +1,136 @@
+@import 'variable';
+@media (max-width : 768px){
+  *{box-sizing: border-box;}
+  main{
+    width: 100%;
+    header{
+      padding: 32px 22px;
+      .img-wrap{
+        pointer-events: none;
+      }
+      .hambuger{
+        .down{display: none;}
+      }
+    }
+    .submain-title-wrap{
+      flex-direction: column; gap: 10px;
+      h1.subtitle{font-size: 45px;}
+      .text-wrapper{
+        .animated-text{
+          font-size: 30px;
+          height: 80px;
+          line-height: 80px;
+        }
+      }
+      .text-measure{font-size: 30px;}
+    }
+  }
+  section.text-content{
+    width: 100%;
+    p{font-size: 19px;}
+  }
+  section.slide-page{
+    height: 400vh; width: 100%;
+    overflow-x: hidden;
+    .page{
+      height: 611px;
+      padding: 60px 20px;
+      height: 100vh;
+      position: relative;
+      .card-content{
+        flex-direction: column;
+        .card-title{
+          gap: 38px;
+          h2{font-size: 2.7rem;
+            font-weight: 800;
+          word-break: break-word;
+          overflow-wrap: break-word;}
+          ul{
+            li{font-size: 1.5rem; padding: 10px 0;}
+          }
+        }
+        .card-desc{
+          font-size: 0.8rem;
+          width: 90%;
+          margin-top: 30px;
+        }
+      }
+      .card-img{
+        display: none;
+        img{}
+      }
+    }
+  }
+  section.award{
+    width: 100%; padding: 170px 20px 140px;
+    .award-list{
+      li{
+        gap: 20px; padding: 30px 0;
+        .year{
+          flex: 0;
+        }
+        .title{display: none;}
+        .award-info{
+          gap: 10px;
+          img{
+            width: 30px; height: 30px;
+            object-fit: cover;
+          }
+          .desc-wrap{
+            p{font-size: 0.8rem;}
+            b{font-size: 0.8rem;}
+          }
+        }
+      }
+    }
+  }
+  section.logo-slide{
+    padding-bottom: 250px;
+    h3{
+      font-size: 1.4rem;
+      padding: 0 20px; margin-bottom: 76px;
+    }
+    overflow-x: hidden;
+  }
+  section.map{
+    padding: 0 22px 140px;
+    .content-wrap{
+      h2{font-size: 2.8rem;}
+      p{font-size: 1.2rem;}
+    }
+  }
+  footer{
+    height: 80vh;
+    padding: 91px 21px;
+    .footer-content{
+      transform: translateY(-70px);
+      .footer-img{
+        display: none;
+      }
+      display: flex; justify-content: center;
+      flex-direction: column;
+      .footer-title{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+      .bottom-wrap{
+        gap: 10px;
+      a{
+        pointer-events: none;
+        margin-bottom: 20px;
+        border: none;
+        font-size: 1.3rem;
+        width: 150px;
+      }
+      }
+      .footer-text{
+        width: 90%; margin: auto;
+      }
+      .bottom-logo{display: none;}
+    }
+  }
+  .space{
+    height: 80vh;
+  }
+}
