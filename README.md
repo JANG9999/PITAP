@@ -61,7 +61,9 @@ GSAP를 활용해 특정 섹션에서 화면을 고정하고, 스크롤 시 화�
 또한 API를 활용하여 지도를 불러와 화면에 표시하였습니다.
 <br><br>
 ### story
-![Image](https://github.com/user-attachments/assets/b87257bc-8f1a-4266-b40f-8d577bb734e0)
+<img width="2830" height="1496" alt="Image" src="https://github.com/user-attachments/assets/cba676e6-5f42-424c-bf54-5be129751c08" />
+
+<img width="2832" height="1514" alt="Image" src="https://github.com/user-attachments/assets/8c938d0b-8e8e-42a9-ad92-7aa7a91443a4" />
 <br><br><br>
 
 <br><br>
