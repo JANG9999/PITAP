@@ -68,9 +68,6 @@ GSAP를 활용해 특정 섹션에서 화면을 고정하고, 스크롤 시 화�
 
 <br><br>
 
-<img width="2880" height="5762" alt="Image" src="https://github.com/user-attachments/assets/fca75809-8b18-4af2-baec-d93fb7847e48" />
-<br><br>
-
 <img width="2818" height="1480" alt="Image" src="https://github.com/user-attachments/assets/4fba82b5-8fb7-4cf1-86af-e886c6cf83d2" />
 <br><br>
 옵션 메뉴에서 항목을 클릭하면 해당하는 내용의 카드가 화면에 나타나도록 제작하였습니다. 
